@@ -4,8 +4,18 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
-		require("nvim-tree").setup()
+		require("nvim-tree").setup({
+      git = {
+        enable = false
+      }
 
-		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+    })
+
+		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>",
+      {
+        silent = true,
+        nowait = true,
+      }
+    )
 	end,
 }

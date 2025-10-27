@@ -1,8 +1,9 @@
 vim.opt.termguicolors = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
-vim.opt.tabstop = 2 -- Set the visual width of a tab character
-vim.opt.shiftwidth = 2 -- Set the number of spaces inserted for autoindentation
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.timeoutlen = 300
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to window below" })
