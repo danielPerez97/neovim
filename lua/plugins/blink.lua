@@ -1,11 +1,12 @@
 return {
   'saghen/blink.cmp',
+  enable = false,
   dependencies = { 'rafamadriz/friendly-snippets' },
 
   version = '1.*',
 
   opts = {
-    keymap = { preset = 'super-tab' },
+    keymap = { preset = 'default' },
 
     appearance = {
       nerd_font_variant = 'mono'
