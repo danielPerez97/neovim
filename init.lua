@@ -19,3 +19,6 @@ require("bufferline").setup({})
 require("lazy").setup({
 	{ "nvim-treesitter/nvim-treesitter", branch = "master", lazy = false, build = ":TSUpdate" },
 })
+
+-- LSP's
+vim.lsp.enable({ "clangd", "rust-analyzer" })

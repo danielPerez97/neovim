@@ -7,12 +7,6 @@ return {
 	},
 	config = function()
 		require("mason").setup()
-		require("mason-lspconfig").setup({
-			ensure_installed = {
-				"lua_ls",
-				"clangd",
-			},
-		})
 
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
