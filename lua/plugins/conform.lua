@@ -3,7 +3,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	keys = {
 		{
-			"<leader>f",
+			"<leader>ff",
 			function()
 				require("conform").format({
 					lsp_fallback = false,

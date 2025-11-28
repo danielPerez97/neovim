@@ -6,9 +6,9 @@ return {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
 	config = function()
-    vim.keymap.set("n", "<space>lg", require("telescope.builtin").live_grep)
-    vim.keymap.set("n", "<space>bi", require("telescope.builtin").builtin)
-		vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files)
+		vim.keymap.set("n", "<space>fl", require("telescope.builtin").live_grep, { desc = "Find Text" })
+		vim.keymap.set("n", "<space>fb", require("telescope.builtin").builtin, { desc = "Find Builtin" })
+		vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files, { desc = "Find Files" })
 		vim.keymap.set("n", "<space>en", function()
 			require("telescope.builtin").find_files({
 				cwd = vim.fn.stdpath("config"),
