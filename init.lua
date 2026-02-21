@@ -16,9 +16,6 @@ end, { desc = "Format file" })
 
 require("config.lazy")
 require("bufferline").setup({})
-require("lazy").setup({
-	{ "nvim-treesitter/nvim-treesitter", branch = "master", lazy = false, build = ":TSUpdate" },
-})
 
 -- LSP's
-vim.lsp.enable({ "clangd", "rust-analyzer" })
+vim.lsp.enable({ "clangd", "rust-analyzer", "sourcekit-lsp" })
