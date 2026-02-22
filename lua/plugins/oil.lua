@@ -10,7 +10,8 @@ return {
             border = "rounded"
           },
           keymaps = {
-            ["l"] = "actions.select"
+            ["l"] = "actions.select",
+            ["."] = { "actions.toggle_hidden", mode = "n" },
           },
         })
 
