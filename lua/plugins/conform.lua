@@ -26,7 +26,8 @@ return {
             }
         },
         formatters_by_ft = {
-          lua = { "lua-format" }
+          lua = { "lua-format" },
+          swift = { "swiftformat" },
         },
         format_on_save = {
             timeout_ms = 500,
