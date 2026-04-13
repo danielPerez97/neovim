@@ -5,6 +5,14 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		"saghen/blink.cmp",
 	},
+  opts = {
+    servers = {
+      clangd = {
+        mason = false,
+        cmd = { "clangd" }
+      }
+    }
+  },
 	config = function()
 		require("mason").setup()
 
@@ -52,5 +60,6 @@ return {
 		}
 
 		vim.lsp.enable("lua_ls")
+    vim.lsp.enable("clangd")
 	end,
 }
