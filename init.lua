@@ -1,8 +1,8 @@
 vim.opt.termguicolors = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.timeoutlen = 300
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
